@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+
+  "name": "写作助手",
+  "description": "写作助手",
+  "version": "1.0",
+
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+
+  "action": {
+    "default_icon": {
+      "16": "icon.png",
+      "32": "icon.png"
+    },
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+      {
+          "matches": ["<all_urls>"],
+          "js": ["js/vendor.js", "js/content_script.js"]
+      }
+  ],
+
+  "web_accessible_resources": [{
+    "resources": [ "imgs/*.png" ,"*.png"],
+    "extension_ids": ["*"],
+    "matches": [ "*://*/*" ]
+  }],
+
+  "background": {
+    "service_worker": "js/background.js"
+  },
+
+  "permissions": [
+    "storage"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

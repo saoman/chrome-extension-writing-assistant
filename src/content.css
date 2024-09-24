@@ -1,0 +1,51 @@
+.container {
+  padding: 13px;
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #ccc;
+  background: #fff;
+  text-align: left;
+  font-family: '微软雅黑';
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: 13px;
+  font-family: '微软雅黑';
+}
+
+.closeImage {
+  float: right;
+}
+
+.copyButton {
+  float: right;
+  margin-right: 50px;
+}
+
+.sourceText {
+  white-space: normal;
+  margin: 8px 0;
+  font-size: 13px;
+  font-family: '微软雅黑';
+  color: #333;
+  padding: 0;
+  line-height: 18px;
+  width: 100%;
+}
+
+.contentText {
+  white-space: normal;
+  margin-top: 8px;
+  font-size: 13px;
+  font-family: '微软雅黑';
+  color: #333;
+  padding: 0;
+  line-height: 18px;
+  width: 100%;
+}
